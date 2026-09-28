@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Nhân Sự Công Ty</title>
+</head>
+<body>
+    <h1>Hệ Thống Quản Lý Nhân Sự</h1>
+    
+    <ul>
+        <li><a href="#danhsach">Danh Sách Nhân Viên</a></li>
+        <li><a href="#themmoi">Thêm Nhân Viên Mới</a></li>
+        <li><a href="#phongban">Các Phòng Ban</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="danhsach">Danh Sách Nhân Viên</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Mã NV</th>
+            <th>Họ và Tên</th>
+            <th>Ngày Sinh</th>
+            <th>Giới Tính</th>
+            <th>Phòng Ban</th>
+            <th>Chức Vụ</th>
+            <th>Hành Động</th>
+        </tr>
+        <tr>
+            <td>NV001</td>
+            <td>Nguyễn Văn A</td>
+            <td>01/01/1990</td>
+            <td>Nam</td>
+            <td>Kỹ Thuật</td>
+            <td>Trưởng Phòng</td>
+            <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+        </tr>
+        <tr>
+            <td>NV002</td>
+            <td>Trần Thị B</td>
+            <td>15/05/1995</td>
+            <td>Nữ</td>
+            <td>Kế Toán</td>
+            <td>Nhân Viên</td>
+            <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+        </tr>
+        <tr>
+            <td>NV003</td>
+            <td>Lê Văn C</td>
+            <td>20/10/1992</td>
+            <td>Nam</td>
+            <td>Nhân Sự</td>
+            <td>Nhân Viên</td>
+            <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2 id="themmoi">Thêm Nhân Viên Mới</h2>
+    <form action="#" method="POST">
+        <label for="manv">Mã Nhân Viên:</label><br>
+        <input type="text" id="manv" name="manv"><br><br>
+
+        <label for="hoten">Họ và Tên:</label><br>
+        <input type="text" id="hoten" name="hoten"><br><br>
+
+        <label for="ngaysinh">Ngày Sinh:</label><br>
+        <input type="date" id="ngaysinh" name="ngaysinh"><br><br>
+
+        <label>Giới Tính:</label><br>
+        <input type="radio" id="nam" name="gioitinh" value="Nam">
+        <label for="nam">Nam</label>
+        <input type="radio" id="nu" name="gioitinh" value="Nữ">
+        <label for="nu">Nữ</label><br><br>
+
+        <label for="phongban">Phòng Ban:</label><br>
+        <select id="phongban" name="phongban">
+            <option value="kythuat">Kỹ Thuật</option>
+            <option value="ketoan">Kế Toán</option>
+            <option value="nhansu">Nhân Sự</option>
+            <option value="kinhdoanh">Kinh Doanh</option>
+        </select><br><br>
+
+        <label for="chucvu">Chức Vụ:</label><br>
+        <input type="text" id="chucvu" name="chucvu"><br><br>
+
+        <input type="submit" value="Lưu Thông Tin">
+        <input type="reset" value="Làm Mới">
+    </form>
+
+    <hr>
+
+    <h2 id="phongban">Danh Sách Phòng Ban</h2>
+    <table border="1" width="50%">
+        <tr>
+            <th>Mã Phòng</th>
+            <th>Tên Phòng Ban</th>
+            <th>Số Lượng NV</th>
+        </tr>
+        <tr>
+            <td>PB01</td>
+            <td>Kỹ Thuật</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>PB02</td>
+            <td>Kế Toán</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>PB03</td>
+            <td>Nhân Sự</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>PB04</td>
+            <td>Kinh Doanh</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <hr>
+    <p><i>© 2026 Hệ Thống Quản Lý Nhân Sự.</i></p>
+</body>
+</html>
